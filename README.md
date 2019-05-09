@@ -1,8 +1,7 @@
 # create-element.js
 
-This is an alternative to `document.createElement`.
-
-It was too annoying to write as below. So i made it.
+A simple method for create HTML element. 
+You don't have to write like that below anymore.  
 
 ```javascript
 const div = document.createElement('div');
@@ -20,17 +19,32 @@ npm install create-element.js
 ## Usage
 
 ```javascript
-ce.tagName(attribute, innerContents);
+ce.tagName(param1, param2);
 ```
-- `tagName`: HTML tab name of element
-- `attribute`: If you put an object as a parameter, it is an attribute. you must use object with `property : value` pairs.
-- `innerContents`: If you put an String or Number as a parameter, it is an innerContents.
 
-## Examples
+- `tagName` : HTML tag name of element
+
+```javascript
+ce.div();
+ce.span();
+ce.p();
+```
+
+- `String` or `Number` type parameter : value of element.innerText 
 
 ```javascript
 ce.p('Hello, world');  // <p>Hello, world</p>
+ce.span(1234);  // <span>1234</span>
+```
+
+- `object` type parameter : attribute name and value of element
+```javascript
 ce.div({id: 'title'}); // <div id="title"></div>
+ce.span({class: 'name'}); // <span class="name"></span>
+```
+
+## Examples
+```javascript
 ce.span({id: 'name', class: 'nice-style'}, 'my name'); // <span id="name" class="nice-style">my name</span>
 ce.span(123, {id: 'name', class: 'nice-style'}); // <span id="name" class="nice-style">123</span>
 ```
