@@ -32,19 +32,5 @@ ce.span({id: 'name', class: 'nice-style'}, 'my name'); // <span id="name" class=
 ce.span(123, {id: 'name', class: 'nice-style'}); // <span id="name" class="nice-style">123</span>
 ```
 
-## Add your custom tags
-[Basic HTML Tags](https://www.w3schools.com/tags/) are registered. However, If you wan't other tag then `add` it.
-```
-ce.add('yourTag');
-
-ce.yourTag();
-ce.["yourTag"]();
-```
-
-You can remove any tags what you want.
-```
-ce.remove('yourTag');
-```
-
 ## Licence
 [MIT License](https://opensource.org/licenses/MIT)
