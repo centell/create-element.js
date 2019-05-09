@@ -1,6 +1,6 @@
 {
   "name": "create-element.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Makes the DOM element easier.",
   "main": "ce.js",
   "scripts": {
