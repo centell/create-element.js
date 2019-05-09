@@ -10,6 +10,12 @@ div.classList.add('my-class');
 div.innerText = 'Hello, world';
 ```
 
+## install
+
+```
+npm install create-element.js
+```
+
 ## Basic Usage
 ```
 ce.tagName(attribute, innerContents);

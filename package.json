@@ -1,5 +1,5 @@
 {
-  "name": "create-element",
+  "name": "create-element.js",
   "version": "0.1.1",
   "description": "Makes the DOM element easier.",
   "main": "ce.js",
