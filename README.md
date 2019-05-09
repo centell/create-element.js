@@ -24,7 +24,7 @@ ce.tagName(attribute, innerContents);
 - `attribute`: If you put an object as a parameter, it is an attribute. you must use object with `property : value` pairs.
 - `innerContents`: If you put an String or Number as a parameter, it is an innerContents.
 
-## examples
+## Examples
 ```
 ce.p('Hello, world');  // <p>Hello, world</p>
 ce.div({id: 'title'}); // <div id="title"></div>
@@ -45,3 +45,6 @@ You can remove any tags what you want.
 ```
 ce.remove('yourTag');
 ```
+
+## Licence
+[MIT License](https://opensource.org/licenses/MIT)
