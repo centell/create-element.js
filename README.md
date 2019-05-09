@@ -3,21 +3,23 @@
 This is an alternative to `document.createElement`.
 
 It was too annoying to write as below. So i made it.
-```
+
+```javascript
 const div = document.createElement('div');
 div.id = 'divDemo';
 div.classList.add('my-class');
 div.innerText = 'Hello, world';
 ```
 
-## install
+## Install
 
-```
+```bash
 npm install create-element.js
 ```
 
-## Basic Usage
-```
+## Usage
+
+```javascript
 ce.tagName(attribute, innerContents);
 ```
 - `tagName`: HTML tab name of element
@@ -25,7 +27,8 @@ ce.tagName(attribute, innerContents);
 - `innerContents`: If you put an String or Number as a parameter, it is an innerContents.
 
 ## Examples
-```
+
+```javascript
 ce.p('Hello, world');  // <p>Hello, world</p>
 ce.div({id: 'title'}); // <div id="title"></div>
 ce.span({id: 'name', class: 'nice-style'}, 'my name'); // <span id="name" class="nice-style">my name</span>
