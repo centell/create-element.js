@@ -1,0 +1,25 @@
+{
+  "name": "create-element",
+  "version": "0.1.1",
+  "description": "Makes the DOM element easier.",
+  "main": "ce.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/centell/create-element.js.git"
+  },
+  "keywords": [
+    "dom",
+    "create",
+    "element",
+    "html"
+  ],
+  "author": "Centell <centell@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/centell/create-element.js/issues"
+  },
+  "homepage": "https://github.com/centell/create-element.js#readme"
+}

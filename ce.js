@@ -26,14 +26,16 @@ var ce = {
     var el = document.createElement(elementName);
 
     var attributes = {};
-    var children = '';
+    var innerContents = '';
 
     for (let i in arrParameters) {
       if (typeof arrParameters[i] == "object") {
         attributes = arrParameters[i];
         continue;
       }
-      children = arrParameters[i];
+      if (typeof arrParameters[i] == "string" || "number") {
+        innerContents = arrParameters[i];
+      }
     }
 
     if (attributes) {
@@ -42,9 +44,9 @@ var ce = {
       }
     }
 
-    if (children) {
-      if (typeof children == "string" || typeof children == "number") {
-        el.appendChild(document.createTextNode(children));
+    if (innerContents) {
+      if (typeof innerContents == "string" || "number") {
+        el.appendChild(document.createTextNode(innerContents));
       }
     }
 
