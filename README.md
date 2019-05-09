@@ -1,7 +1,7 @@
 # create-element.js
 
 A simple method for create HTML element. 
-You don't have to write like that below anymore.  
+You don't have to write like that anymore.  
 
 ```javascript
 const div = document.createElement('div');
@@ -37,7 +37,8 @@ ce.p('Hello, world');  // <p>Hello, world</p>
 ce.span(1234);  // <span>1234</span>
 ```
 
-- `object` type parameter : attribute name and value of element
+- `object` type parameter : attribute name and attribute value of element
+
 ```javascript
 ce.div({id: 'title'}); // <div id="title"></div>
 ce.span({class: 'name'}); // <span class="name"></span>
@@ -51,3 +52,4 @@ ce.span(123, {id: 'name', class: 'nice-style'}); // <span id="name" class="nice-
 
 ## Licence
 [MIT License](https://opensource.org/licenses/MIT)
+
