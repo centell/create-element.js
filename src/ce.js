@@ -1,9 +1,11 @@
+'use strict';
+
 const ce = new Proxy({}, {
   get: function(target, elementName) {
     return (param1, param2) => this.createElement(elementName, [param1, param2]);
   },
   createElement: function(elementName, params) {
-    var el = document.createElement(elementName);
+    const el = document.createElement(elementName);
 
     for (let i in params) {
       // innerContent

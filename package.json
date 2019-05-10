@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/centell/create-element.js/issues"
   },
-  "homepage": "https://github.com/centell/create-element.js#readme"
+  "homepage": "https://github.com/centell/create-element.js#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
