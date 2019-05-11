@@ -1,7 +1,7 @@
 # create-element.js
 
 A simple method for create HTML element. 
-You don't have to write like that anymore.  
+You don't have to write like below anymore.  
 
 ```javascript
 const div = document.createElement('div');
