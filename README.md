@@ -50,7 +50,7 @@ ce.span({id: 'name', class: 'nice-style'}, 'my name'); // <span id="name" class=
 ce.span(123, {id: 'name', class: 'nice-style'}); // <span id="name" class="nice-style">123</span>
 ```
 ## Links 
-[github link](https://github.com/centell/create-element.js)
+[github link](https://github.com/centell/create-element.js)  
 [npm link](https://www.npmjs.com/package/create-element.js)
 
 ## Licence
