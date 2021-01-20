@@ -2,21 +2,31 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
-  <meta name="viewport" content="width=device-width"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Create-Element.js Demo</title>
-
   <script src="../dist/ce.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      var welcome = ce.div("hello, world", {id:"welcome", class:'message'});
-      document.getElementById('demo').appendChild(welcome);
-    });
-  </script>
+  <style>
+    body {
+      margin: 0;
+    }
+    .message {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
   <div id="demo"></div>
-
+  <script>
+    (() => {
+      var welcome = ce.div("hello, world", {id:"welcome", class:'message'});
+      document.getElementById('demo').appendChild(welcome);
+    })()
+  </script>
 </body>
 </html>

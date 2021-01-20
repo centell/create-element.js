@@ -16,6 +16,9 @@ div.innerText = 'Hello, world';
 npm install create-element.js
 ```
 
+tip:
+Using [frontend-dependencies](https://www.npmjs.com/package/frontend-dependencies) makes it easier to use the library on the front end.
+
 ## Usage
 
 ```javascript
